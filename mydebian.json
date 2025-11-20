@@ -1,0 +1,48 @@
+{
+    "builders": [
+        {
+            "type": "yandex",
+            "token": "y0__",
+            "folder_id": "b1___",
+            "zone": "ru-central1-a",
+            "image_name": "debian-11-docker",
+            "image_description": "my custom debian with docker",
+            "source_image_family": "debian-11",
+            "subnet_id": "e9____",
+            "use_ipv4_nat": true,
+            "disk_type": "network-hdd",
+            "ssh_username": "debian"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "inline": [
+                "# Отключаем проблемные репозитории",
+                "sudo sed -i '/bullseye-backports/d' /etc/apt/sources.list",
+                "sudo rm -f /etc/apt/sources.list.d/*backports*",
+                
+                "# Обновление системы (игнорируем ошибки репозиториев)",
+                "sudo apt-get update -y || true",
+                "sudo apt-get upgrade -y",
+                
+                "# Установка Docker через официальный скрипт (самый надежный способ)",
+                "curl -fsSL https://get.docker.com -o get-docker.sh",
+                "sudo sh get-docker.sh",
+                
+                "# Установка htop и tmux",
+                "sudo apt-get install -y htop tmux",
+                
+                "# Добавление пользователя в группу docker",
+                "sudo usermod -aG docker debian",
+                
+                "# Проверка установки",
+                "echo '=== Установка завершена ==='",
+                "sudo docker --version",
+                "htop --version",
+                "tmux -V",
+                "echo '=== Все пакеты установлены успешно ==='"
+            ]
+        }
+    ]
+}
