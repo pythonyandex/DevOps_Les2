@@ -29,6 +29,10 @@ Hey, Netology
 - Соберите и отправьте созданный образ в свой dockerhub-репозитории c tag 1.0.0 (ТОЛЬКО ЕСЛИ ЕСТЬ ДОСТУП). 
 - Предоставьте ответ в виде ссылки на https://hub.docker.com/<username_repo>/custom-nginx/general .
 
+## Решение 1
+[Ссылка на hub.docker.com](https://hub.docker.com/repository/docker/ruslanse7en/custom-nginx/general)
+
+
 ## Задача 2
 1. Запустите ваш образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
 - имя контейнера "ФИО-custom-nginx-t2"
@@ -40,6 +44,10 @@ Hey, Netology
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+## Решение 2
+![Создание и переименования]([https://hub.docker.com/repository/docker/ruslanse7en/custom-nginx/general](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907906/Task2_%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D0%B5%D1%80%D0%B5%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_custom-nginx.png?ts=1764068161&_gl=1*1n41k93*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4))
+
+![Скриншон Curl](https://hub.docker.com/repository/docker/ruslanse7en/custom-nginx/general)
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
@@ -57,6 +65,16 @@ Hey, Netology
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+## Решение 3
+Так как контейнер воспринимает как процесс и если остановить единственный процесс nginx на контейнере, то соответственно и контейнер без основного процесса завершает работу.
+После изменения порта в конфигурации nginx на 81, nginx внутри контейнера начал слушать порт 81, но проброс портов Docker остался настроен на порт 80 контейнера. Без удаления образа, надо сделать commit с данного образа и запустить уже с правильным пробросом портов. В качестве решения прикреплены следующие скрины:
+
+![ Сtrl-C ](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5896625/SIGINT_custom-nginx.png?ts=1764068160&_gl=1*1xagzof*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4)
+
+![Изменение порта на 81](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907901/Task3_Change_Port.png?ts=1764068160&_gl=1*4nn7kg*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4)
+
+![Curl Nginx:port 81]( https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907902/Task3_Nginx_Reload.png?ts=1764068160&_gl=1*4nn7kg*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4)
+
 ## Задача 4
 
 
@@ -69,6 +87,9 @@ Hey, Netology
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+## Решение 4 
+
+![Centos/Debian]( https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907908/Task4.png?ts=1764068161&_gl=1*17mqrqq*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4)
 
 ## Задача 5
 
@@ -116,6 +137,12 @@ services:
 7. Удалите любой из манифестов компоуза(например compose.yaml).  Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
+## Решение 5 
+
+Добавил скрины ![Start_Docker Compose](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907909/Task5_Start_Docker-compose.png?ts=1764068162&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4), ![Portainer Inspect](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907904/task5_Portainer_Nginx_Inspect.png?ts=1764068161&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4) и ![Удаление yaml, stop all](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907903/Task5_Remove_yaml_Stop_Docker-compose.png?ts=1764068161&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4). Не совсем разобрался с web editor, никак не получалось найти в веб интерфейсе.
+Проблема из-за удаления одного из yaml файлов в том, что обнаружены контейнеры в проекте без yaml файла, флаг --remove-orphans будет удалять все такие контейнеры.
+
+
 
 ---
 
