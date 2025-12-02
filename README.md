@@ -142,7 +142,10 @@ services:
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
 ## Решение 5 
 
-Добавил скрины ![Start_Docker Compose](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907909/Task5_Start_Docker-compose.png?ts=1764068162&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4), ![Portainer Inspect](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907904/task5_Portainer_Nginx_Inspect.png?ts=1764068161&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4) и ![Удаление yaml, stop all](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907903/Task5_Remove_yaml_Stop_Docker-compose.png?ts=1764068161&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4). Не совсем разобрался с web editor, никак не получалось найти в веб интерфейсе.
+Добавил скрины ![Start_Docker Compose](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907909/Task5_Start_Docker-compose.png?ts=1764068162&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4), ![Portainer Inspect](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907904/task5_Portainer_Nginx_Inspect.png?ts=1764068161&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4) и . Не совсем разобрался с web editor, никак не получалось найти в веб интерфейсе.
+
+Удаление yaml, stop all:
+![Удаление yaml, stop all](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907903/Task5_Remove_yaml_Stop_Docker-compose.png?ts=1764068161&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4)
 Проблема из-за удаления одного из yaml файлов в том, что обнаружены контейнеры в проекте без yaml файла, флаг --remove-orphans будет удалять все такие контейнеры.
 
 
