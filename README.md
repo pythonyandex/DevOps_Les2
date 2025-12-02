@@ -61,6 +61,11 @@ Error: The requested URL returned error: 404:
 
 - Если ваша рабочая станция в меру различных факторов не может запустить вложенную виртуализацию - допускается неполное выполнение(до ошибки запуска ВМ)
 
+
+## Решение 2
+[Создание и переименование](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907906/Task2_%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D0%B5%D1%80%D0%B5%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_custom-nginx.png?ts=1764068161&_gl=1*5vdc1c*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4)
+[Curl](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907906/Task2_%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D0%B5%D1%80%D0%B5%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_custom-nginx.png?ts=1764068161&_gl=1*5vdc1c*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4)
+
 ## Задача 3
 
 1. Отредактируйте файл    [mydebian.json.pkr.hcl](https://github.com/netology-code/virtd-homeworks/blob/shvirtd-1/05-virt-02-iaac/src/mydebian.json.pkr.hcl)  или [mydebian.jsonl](https://github.com/netology-code/virtd-homeworks/blob/shvirtd-1/05-virt-02-iaac/src/mydebian.json) в директории src (packer умеет и в json, и в hcl форматы):
