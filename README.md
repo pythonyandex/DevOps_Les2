@@ -45,8 +45,11 @@ Hey, Netology
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
 ## Решение 2
+Прикрепил скрины:
+Создание и переименования
 ![Создание и переименования](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907906/Task2_%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D0%B5%D1%80%D0%B5%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_custom-nginx.png?ts=1764068161&_gl=1*bou25g*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4)
 
+Curl
 ![Скриншон Curl](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907905/Task2_Curl_custom-nginx.png?ts=1764068161&_gl=1*q5hvi1*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4)
 
 ## Задача 3
