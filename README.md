@@ -29,6 +29,9 @@
 
 Примечание: Облачная ВМ с Linux в данной задаче не подойдёт из-за ограничений облачного провайдера. У вас просто не установится virtualbox.
 
+## Решение 1
+[Ссылка на hub.docker.com](https://hub.docker.com/repository/docker/ruslanse7en/custom-nginx/general)
+
 ## Задача 2
 
 1. Убедитесь, что у вас есть ssh ключ в ОС или создайте его с помощью команды ```ssh-keygen -t ed25519```
