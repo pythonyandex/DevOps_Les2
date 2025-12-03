@@ -142,7 +142,7 @@ services:
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
 ## Решение 5 
 
-Добавил скрины ![Start_Docker Compose](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907909/Task5_Start_Docker-compose.png?ts=1764068162&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4), ![Portainer Inspect](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907904/task5_Portainer_Nginx_Inspect.png?ts=1764068161&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4) и Container inspect Config Tree: ![Container inspect Config Tree](https://github.com/pythonyandex/DevOps_Les2/blob/main/Task5_Tree_Config1.png)
+Добавил скрины ![Start_Docker Compose](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907909/Task5_Start_Docker-compose.png?ts=1764068162&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4). Container inspect Config Tree: ![Container inspect Config Tree](https://github.com/pythonyandex/DevOps_Les2/blob/main/Task5_Tree_Config1.png)
 
 Удаление yaml, stop all:
 ![Удаление yaml, stop all](https://u.netology.ru/backend/uploads/2025/11/lms/tasks/homework_solutions/file/5907903/Task5_Remove_yaml_Stop_Docker-compose.png?ts=1764068161&_gl=1*kxuq1n*_gcl_au*MTc5ODA1NzUzOS4xNzYyNDI3NzU4)
